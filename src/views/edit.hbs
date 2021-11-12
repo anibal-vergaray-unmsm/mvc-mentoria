@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <!--FORM-->
+    <div class="col-md-5 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h1>Actualizar Mentor</h1>
+
+          <form action="/mentores/{{mentor._id}}/edit" method="post">
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="number"
+                name="dni"
+                placeholder="Dni"
+                value="{{mentor.dni}}"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="number"
+                name="nivel"
+                placeholder="Nivel"
+                value="{{mentor.nivel}}"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="number"
+                name="idMentorSuperior"
+                placeholder="Id Mentor Superior"
+                value="{{mentor.idMentorSuperior}}"
+              />
+            </div>
+            <button class="btn btn-primary" type="submit">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

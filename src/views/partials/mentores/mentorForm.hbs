@@ -1,0 +1,46 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h3>Agregar un Mentor</h3>
+  <form action="/mentores/add" method="post">
+
+    {{! Dni Input }}
+    <div class="mb-3">
+      <label for="title">DNI:</label>
+      <input
+        id="dni"
+        class="form-control rounded-0 bg-dark text-white"
+        type="number"
+        name="dni"
+        placeholder="Dni"
+        autofocus
+      />
+    </div>
+
+    {{! Nivel Input }}
+    <div class="mb-3">
+      <label for="description">Nivel:</label>
+      <input
+        id="nivel"
+        class="form-control rounded-0 bg-dark text-white"
+        type="number"
+        name="nivel"
+        placeholder="Nivel"
+        autofocus
+      />
+    </div>
+
+    {{! Id Mentor Superior Input }}
+    <div class="mb-3">
+      <label for="description">Id Mentor Superior:</label>
+      <input
+        id="idMentorSuperior"
+        class="form-control rounded-0 bg-dark text-white"
+        type="number"
+        name="idMentorSuperior"
+        placeholder="Id Mentor Superior"
+        autofocus
+      />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Add</button>
+  </form>
+</div>
